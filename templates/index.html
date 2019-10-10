@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+
+    <title>Beijing Metro</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="/static/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/signin.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="/static/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+            a {
+                cursor: pointer;
+                color: rgb(85, 26, 139);
+                text-decoration: underline;
+            }
+        </style>
+  </head>
+
+<body>
+    <div id="oDiv" class="container" align="center">
+        <form method="post">
+            <img src="http://jtapi.bendibao.com/ditie/inc/bj/xianluda.gif" width = '750px' height = '562px' >
+            <div>
+                <label id="result" style="font-size:25px; color: #8c8c8c" ></label>
+            </div>
+            <div align="right">
+                <button class="btn btn-lg btn-primary " type="submit")>返回</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        var result = '{% raw result %}'
+        var label = document.getElementById('result')
+        label.innerText = result
+    </script>
+</body>
+</html>
